@@ -2,52 +2,44 @@ git:
   depth: 3
 env:
   global:
-  - secure: "JlCs3RIx6D7Kx2kbC/bMx63E0Ov0PBx0GTCaZ3bil2i6oTEEiWq/MedTWYecn/n4CeNptqTaSoqxsm9Z7YwcZ1ZD8WGfpu0Wd6jKDyUH0jbD5V0mR0LDnoX5spT/lOfFdmJ1BzA9zmGcEnOVBKvXCJZhyS9ae2oiQRUaDsCD4mg4+gs5G1Ha8r9vFdQYAC28xaM+CtU1YWZQZPEsnDxP05ZqRJilaQJcan0E/tg2CDNU8zFxnPyULVECYb9oM7pWURgPXGiSIKmcm0gv0DlNUNRi+FeIyFTIsG6NmXgUsMxl7fNkvUlf2Mtb7oMcjX4H90R0VP2/rBUa9lcxIdST9UYKzsueKLBmfv99oLr3L/B9Z4CPR84NokZtWXfEJzgAy8JX9+ygDzDsw23cX9pcrJphYeoOz29LFXhHiNe2bEuAfoAzkFtq39uw7zCVa0czMi4aiWS513O6ODYDHB/q0FC20xjeXIan7fzXBLt7UYGHGcNkZpEKK2h2KDIoJK1JYHrZwb8UiBac/evFxfYCIIfpwLG58wq+VtvI5qK30nFYKLk2yLW9pa/EeHLtAvY938D4E6uvCK4DvBuGmAQxBl2YK43vH2HN7FFftk1CW2RSq4+UDizthbAFfG5YvwCYohzDB8KYdQWF+ugibNCWdZD7VIb9pLSJkFHexsvV664="
-  - secure: "Epeup/BxjeQpOVJ8Gv65AE+MjT9zKgcLp7bIroonyKYe+KO01efuu/V6FtokUfU5tMEByiog46V8EXWPVzmaxEbr0+pq0QlbBjiC+zSofB4diTQJoAPn4Lghemt0nsxzH27twmuDz3jXz21BFp1Eo3JIYPUDiYuRNF7VO9vSTmp8hpyDwg065PJSmTbEh6MJNKB+9XLm8VnfnBILT0okHtuhaH4o+3LUlc1cJDjKWk8EncqzsKRr3C2b6+iz5POFRxrOq7fBmqi4KVNSgxes9gHiuU2LxVJSGbn1g4gLDUu2o+RT7U21yQmbg6HetwN9fvt1JaXyJk8haiD5pTzjXRAzsjgEuWAGXHINYEE2PpTY/+wjs4IZ96E25+fFFqHHCl90v8RnpIPGUpohfGNfxnTEPiZSMIJZNPMKXsi18S+YOvkS4Qd+IOxTOhaxtD0Bp++3Zrbu5R8AKd3GXFp0NWk2RR1otpFptCcg7BUwnvG0Bpg8bGz7OG+ORs1/snf7xrPG6It1TeAGFEhpZlBusnmp3rzOpBlpcEmiasnQQ4pwmYSKa1BTyhXWNx2yRK7goGwnj4NK/MzmGs1ezTxq21q1MVI94Ll7ZoMZ3fBDxH2CNCJ3hTRwCOTXWnmWxOcQgp6Dh9aBJL+J3JArJ9Lc2V1BcRK0Yn7OfehbppTepfg="
-  - AWS_DEFAULT_REGION: "us-east-1"
+  - AWS_DEFAULT_REGION: us-west-1
   - S3_PARAMS: '"--acl public-read --cache-control \"public,must-revalidate,proxy-revalidate,max-age=0\""'
   - CMAKE_BUILD_PARALLEL_LEVEL: 4
-  - LINUX_CMAKE_PARAMS: '"-DSPIRV_CROSS_STATIC=OFF -DSPIRV_CROSS_SHARED=ON -DSPIRV_CROSS_CLI=OFF -DSPIRV_CROSS_ENABLE_TESTS=OFF -DSPIRV_CROSS_SKIP_INSTALL=ON -DSPIRV_CROSS_WERROR=ON -DSPIRV_CROSS_FORCE_PIC=ON"'
-
+  - LINUX_CMAKE_PARAMS: '"-DSPIRV_CROSS_STATIC=OFF -DSPIRV_CROSS_SHARED=ON -DSPIRV_CROSS_CLI=OFF
+      -DSPIRV_CROSS_ENABLE_TESTS=OFF -DSPIRV_CROSS_SKIP_INSTALL=ON -DSPIRV_CROSS_WERROR=ON
+      -DSPIRV_CROSS_FORCE_PIC=ON"'
+  - secure: JggGMAtp8YAQqjtxIF3P5N1O0jC8Ofr7jEEZWKRczncYf0T9uP7s7GDLhcXPra7YqRmr9h3Shyh5KcPWc2Pc3lHvz8FjMnuvhy+079o1iEciEn7fsthIDWToy23SbUrrc81vaQKZ1Wamt/9GS3iVN2E/z75AGs0jv2Jab9qFGTyS/gHU19y4zKrvMNv/0GwVf87A3vysnxkxDtiCsLe2WCfmS9YpfxkzGS9Jo1OCRIn2uuDimBb5EJoUazQCLLdOQ0Es9K2f8BUkWQ8S3M0FP/Z5uuOvMsx59hd0pLG2j43GoT/kEA6qEE9Y6iY0ZONEsArwBtzBHyvv4i3bC94xhyY4Uc8xZ5xLbACJxtlDwJnatbz9rw1aLn/bH9e/lFs8xxIP4B4KIdAd9T3TnL4h1WWOpwwNhkN8nHmBEorotbOptQGoszabJpu036m9AMAv5GnnKqMavwzZK1VHqrfpnvbojNWZoO5QQOqCPrzSO5jP/9kRAOGzLZ4nDap4lIblOlfxA71A7Z5g9JppcI6JfppLkGooM/bGVzARFKlwZ76E7nP0am9RE/zql3lHjragNUt2jbDeC8nk8ibl18dNf/37d3O2W2/mpBQ0X6JD0rLv4VlDMqHZedXdjUfufcWxksElY+d4PacITV2yXWLot+rX6EigIsDzg+B6HSOVFbI=
 matrix:
   include:
-
-  # -----------------
-  - name: "Linux x64"
-  # -----------------
-
+  - name: Linux x64
     dist: xenial
     language: c
     compiler: gcc
-
     addons:
       apt:
         packages:
         - cmake
         - gcc-4.8
         - g++-4.8
-
     before_install:
     - pip install --user awscli
     - export PATH=$PATH:$HOME/.local/bin
-
     script:
     - mkdir build
     - cd build
-    - "CC=gcc-4.8 CXX=g++-4.8 cmake $LINUX_CMAKE_PARAMS -DCMAKE_C_FLAGS=\"-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0\" .."
+    - CC=gcc-4.8 CXX=g++-4.8 cmake $LINUX_CMAKE_PARAMS -DCMAKE_C_FLAGS="-U_FORTIFY_SOURCE
+      -D_FORTIFY_SOURCE=0" ..
     - cmake --build .
     - strip libspirv-cross-c-shared.so
-    - "git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git"
-    - "aws s3 cp libspirv-cross-c-shared.so s3://build.lwjgl.org/nightly/linux/x64/libspirv-cross.so $S3_PARAMS"
-    - "aws s3 cp revision.git s3://build.lwjgl.org/nightly/linux/x64/libspirv-cross.so.git $S3_PARAMS"
-
-  # -----------------
-  - name: "Linux arm32"
-  # -----------------
+    - git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git
+    - aws s3 cp libspirv-cross-c-shared.so s3://lwjgl-mips64/nightly/linux/x64/libspirv-cross.so
+      $S3_PARAMS
+    - aws s3 cp revision.git s3://lwjgl-mips64/nightly/linux/x64/libspirv-cross.so.git
+      $S3_PARAMS
+  - name: Linux arm32
     dist: xenial
     language: c
     compiler: gcc
-
     addons:
       apt:
         packages:
@@ -55,28 +47,25 @@ matrix:
         - gcc-4.8-arm-linux-gnueabihf
         - g++-4.8-arm-linux-gnueabihf
         - libc6-dev-armhf-cross
-
     before_install:
     - pip install --user awscli
     - export PATH=$PATH:$HOME/.local/bin
-
     script:
     - mkdir build
     - cd build
-    - "CC=arm-linux-gnueabihf-gcc-4.8 CXX=arm-linux-gnueabihf-g++-4.8 cmake $LINUX_CMAKE_PARAMS -DCMAKE_C_FLAGS=\"-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0\" .."
+    - CC=arm-linux-gnueabihf-gcc-4.8 CXX=arm-linux-gnueabihf-g++-4.8 cmake $LINUX_CMAKE_PARAMS
+      -DCMAKE_C_FLAGS="-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0" ..
     - cmake --build .
     - arm-linux-gnueabihf-strip libspirv-cross-c-shared.so
-    - "git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git"
-    - "aws s3 cp libspirv-cross-c-shared.so s3://build.lwjgl.org/nightly/linux/arm32/libspirv-cross.so $S3_PARAMS"
-    - "aws s3 cp revision.git s3://build.lwjgl.org/nightly/linux/arm32/libspirv-cross.so.git $S3_PARAMS"
-
-  # -----------------
-  - name: "Linux arm64"
-  # -----------------
+    - git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git
+    - aws s3 cp libspirv-cross-c-shared.so s3://lwjgl-mips64/nightly/linux/arm32/libspirv-cross.so
+      $S3_PARAMS
+    - aws s3 cp revision.git s3://lwjgl-mips64/nightly/linux/arm32/libspirv-cross.so.git
+      $S3_PARAMS
+  - name: Linux arm64
     dist: xenial
     language: c
     compiler: gcc
-
     addons:
       apt:
         packages:
@@ -84,40 +73,63 @@ matrix:
         - gcc-4.8-aarch64-linux-gnu
         - g++-4.8-aarch64-linux-gnu
         - libc6-dev-arm64-cross
-
     before_install:
     - pip install --user awscli
     - export PATH=$PATH:$HOME/.local/bin
-
     script:
     - mkdir build
     - cd build
-    - "CC=aarch64-linux-gnu-gcc-4.8 CXX=aarch64-linux-gnu-g++-4.8 cmake $LINUX_CMAKE_PARAMS -DCMAKE_C_FLAGS=\"-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0\" .."
+    - CC=aarch64-linux-gnu-gcc-4.8 CXX=aarch64-linux-gnu-g++-4.8 cmake $LINUX_CMAKE_PARAMS
+      -DCMAKE_C_FLAGS="-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0" ..
     - cmake --build .
     - aarch64-linux-gnu-strip libspirv-cross-c-shared.so
-    - "git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git"
-    - "aws s3 cp libspirv-cross-c-shared.so s3://build.lwjgl.org/nightly/linux/arm64/libspirv-cross.so $S3_PARAMS"
-    - "aws s3 cp revision.git s3://build.lwjgl.org/nightly/linux/arm64/libspirv-cross.so.git $S3_PARAMS"
-
-  # -----------------
-  - name: "macOS"
-  # -----------------
+    - git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git
+    - aws s3 cp libspirv-cross-c-shared.so s3://lwjgl-mips64/nightly/linux/arm64/libspirv-cross.so
+      $S3_PARAMS
+    - aws s3 cp revision.git s3://lwjgl-mips64/nightly/linux/arm64/libspirv-cross.so.git
+      $S3_PARAMS
+  - name: Linux mips64
+    dist: xenial
+    language: c
+    compiler: gcc
+    addons:
+      apt:
+        packages:
+        - cmake
+        - gcc-5-mips64el-linux-gnuabi64
+        - g++-5-mips64el-linux-gnuabi64
+        - libc6-dev-mips64el-cross
+    before_install:
+    - pip install --user awscli
+    - export PATH=$PATH:$HOME/.local/bin
+    script:
+    - mkdir build
+    - cd build
+    - CC=mips64el-linux-gnuabi64-gcc-5 CXX=mips64el-linux-gnuabi64-g++-5 cmake $LINUX_CMAKE_PARAMS
+      -DCMAKE_C_FLAGS="-U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0" ..
+    - cmake --build .
+    - mips64el-linux-gnuabi64-strip libspirv-cross-c-shared.so
+    - git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git
+    - aws s3 cp libspirv-cross-c-shared.so s3://lwjgl-mips64/nightly/linux/mips64/libspirv-cross.so
+      $S3_PARAMS
+    - aws s3 cp revision.git s3://lwjgl-mips64/nightly/linux/mips64/libspirv-cross.so.git
+      $S3_PARAMS
+  - name: macOS
     language: objective-c
     osx_image: xcode11.3
     compiler: clang
-
     before_install:
     - brew update
-
     install:
     - brew install awscli
-
     script:
     - mkdir build
     - cd build
-    - "cmake $LINUX_CMAKE_PARAMS -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 .."
+    - cmake $LINUX_CMAKE_PARAMS -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 ..
     - cmake --build .
     - strip -u -r libspirv-cross-c-shared.dylib
-    - "git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git"
-    - "aws s3 cp libspirv-cross-c-shared.dylib s3://build.lwjgl.org/nightly/macosx/x64/libspirv-cross.dylib $S3_PARAMS"
-    - "aws s3 cp revision.git s3://build.lwjgl.org/nightly/macosx/x64/libspirv-cross.dylib.git $S3_PARAMS"
+    - git log --first-parent --pretty=format:%H HEAD~2..HEAD~1 > revision.git
+    - aws s3 cp libspirv-cross-c-shared.dylib s3://lwjgl-mips64/nightly/macosx/x64/libspirv-cross.dylib
+      $S3_PARAMS
+    - aws s3 cp revision.git s3://lwjgl-mips64/nightly/macosx/x64/libspirv-cross.dylib.git
+      $S3_PARAMS
